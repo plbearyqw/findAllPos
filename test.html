@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <script>
+          function findPosition(arr, item){
+          let array = [];
+          let i = 0;
+          arr.forEach(function(e){
+               if(e === item){
+                     let pos = arr.indexOf(e, i);
+                     array.push(pos);
+                     i = pos + 1;
+               }     
+          });
+          return array;
+}
+    </script>
+</head>
+<body>
+
+          <script>
+                    let array = [1, 3, 7, 1, 4];
+                    alert(findPosition(array, 1));
+          </script>
+
+</body>
+</html>
